@@ -1,1 +1,2 @@
-# Baxter_cppkdl_Example
+# Baxter cppkdl Example
+An example for using Baxter_cppKDL.
