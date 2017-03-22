@@ -24,7 +24,7 @@ int main(int argc, char **argv)
   double rot[4] = {0.03085, 0.9945, 0.0561, 0.0829};
 //=================IK with position=============
   printf("\nBaxter Position IK:\n");
-  kin.inverse_kinematics(ik_position_result,pos, NULL, NULL);
+  kin.inverse_kinematics(ik_position_result,pos);
   for(i=0;i<7;i++)
   {
     printf("%f,",ik_position_result[i]);
@@ -33,7 +33,7 @@ int main(int argc, char **argv)
 
 //=================IK with position and orientation=============
   printf("\nBaxter Pose IK:\n");
-  kin.inverse_kinematics(ik_pose_result,pos,rot,NULL);
+  kin.inverse_kinematics(ik_pose_result,pos,rot);
   for(i=0;i<7;i++)
   {
     printf("%f,",ik_pose_result[i]);
